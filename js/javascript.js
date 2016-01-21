@@ -1,5 +1,6 @@
 function skipTheVideo() {
     var videoWrapper = document.getElementById("video-wrapper");
+    videoWrapper.pause();
 //    videoWrapper.pause();
     $("#video-content").addClass('hidden');
     $("#skip-video").addClass('hidden');
@@ -16,7 +17,7 @@ function playTheVideo() {
     var videoWrapper = document.getElementById("video-wrapper");
     var pageTemplate = document.getElementById('page-template');
     videoWrapper.currentTime = 0;
-    videoWrapper.play()
+    videoWrapper.play();
     videoWrapper.onended = function transitionToNewPage() {
         $("#video-wrapper").addClass('hidden');
         $("#page-template").removeClass('hidden');                

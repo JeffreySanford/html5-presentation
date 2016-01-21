@@ -1,5 +1,6 @@
 html, body {
 	background-color: #000000;
+	font-family:'Trebuchet MS','Verdana','Arial','sans-serif';
 }
 
 #navigation {
@@ -78,6 +79,19 @@ video {
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 }
+
+#important-content {
+	font-family:'Trebuchet MS','Verdana','Arial','sans-serif';
+	color: #FFFFFF;
+	width: 80%;
+	margin: 0 auto;
+	opacity: .8;
+}
+
+#important-content p {
+	font-size: 1.1em;
+}
+
 .hidden {
   display: none !important;
   visibility: hidden !important;
@@ -85,7 +99,6 @@ video {
 
 .modalDialog {
 	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -114,6 +127,10 @@ video {
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
+}
+
+#openModal {
+	color: black;
 }
 
 .close {
