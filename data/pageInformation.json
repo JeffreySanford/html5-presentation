@@ -1,0 +1,12 @@
+[
+    {
+        "video": {
+            "url": "images/video.mp4"
+        }
+    },
+    {
+         "audio": {
+            "url": "audio/something.mp3"
+        }
+    }
+]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5 Video Landing Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="video-content">
+            <video id="video-wrapper">
+            <source src="video/haynes-astronauts.mp4" type="video/mp4">
+            <p >Your browser does not support HTML5 video.</p>
+            </video>
+            <div id="skip-video">
+                <button onclick="skipTheVideo()">Skip Video</button>
+            </div>
+        </div>
+
+        <div id="page-template" class="hidden">
+            <div id="container">
+                <div id="navigation" class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6 text-center">
+                        <a class="btn-primary" id="replayTheVideo" onclick="playTheVideo()">Replay The Video</a>
+                    </div>
+                    <div class="col-sm-612 col-md-6 col-lg-6 text-center">
+                        <a href="#openModal" class="btn-primary" id="terms-and-conditions">Terms and Conditions</a>
+                    </div>
+                </div>  <!-- end row -->
+            </div> <!-- ends container -->
+            <div id="openModal" class="modalDialog">
+                <div style="background-color: white; color: black;">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Terms and Conditions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repellat qui ea, reprehenderit tempora dolorem aut enim doloribus incidunt nihil suscipit veniam maiores aspernatur vitae itaque odio cumque, ratione excepturi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ducimus provident minus, deserunt temporibus vitae a, similique explicabo recusandae amet fugit consequatur voluptates facere beatae sed reiciendis, numquam! Quos, laboriosam.</p>
+                </div>
+            </div> <!-- ends modal insert -->
+        </div> <!-- end page-template -->
+        
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script src="js/javascript.js"></script>
+
+    </body>
+
+</html>
