@@ -5,11 +5,6 @@
         var videoWrapper = document.getElementById("video-wrapper");
         var audioWrapper = document.getElementById("audio-wrapper");
 
-        $("#replay-the-video").on("click", function () {
-            console.log('clciked the play button');
-            playTheVideo();
-        });
-
         //Check for fullscreen
         if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
             // exit full-screen
@@ -83,7 +78,6 @@
         playTheVideo();
 
         $("#replay-the-video").on("click", function () {
-            console.log('clciked the play button');
             playTheVideo();
         });
     });
