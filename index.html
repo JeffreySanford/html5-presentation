@@ -27,43 +27,43 @@
                 <div id="page-template" style = "background: url({{ background }}) no-repeat center fixed">
                 </div>
             </script>
-                    <div id="audio-container">
-                        <audio id="audio-wrapper" loop="loop">
-                            <script id="handlebars-audio-wrapper" type="text/x-handlebars-template"> 
-                                <source src={{ audioOgg }} />  
-                                <source src={{ audioMp3 }} />
-                            </script>
-                        </audio> 
+            <div id="audio-container">
+                <audio id="audio-wrapper" loop="loop">
+                    <script id="handlebars-audio-wrapper" type="text/x-handlebars-template">
+                        <source src={{ audioOgg }} />
+                        <source src={{ audioMp3 }} />
+                    </script>
+                </audio>
+            </div>
+            <script id="mainpage-content-wrapper" type="text/x-handlebars-template">
+                    <div class="row">
+                        <div class="col-md-4 align-left">
+                            <p>{{{ mainPageLeftColumn }}}</p>
+                        </div>
+                        <div class="col-md-4 col-md-offset-4 align-right">
+                            <p>{{{ mainPageRightColumn }}}</p>
+                        </div>
                     </div>
-                    <script id="mainpage-content-wrapper" type="text/x-handlebars-template"> 
-                            <div class="row">
-                                <div class="col-md-4 align-left">
-                                    <p>{{{ mainPageLeftColumn }}}</p>
-                                </div>
-                                <div class="col-md-4 col-md-offset-4 align-right">
-                                    <p>{{{ mainPageRightColumn }}}</p>
-                                </div>
-                            </div>
-                    </script>
-                    <div id="navigation" class="row hidden">
-                        <div class="col-sm-6 col-md-6 col-lg-6 text-center">
-                            <a class="btn-primary" id="replay-the-video">Replay The Video</a>
-                        </div>
-                        <div class="col-sm-612 col-md-6 col-lg-6 text-center">
-                            <a href="#modal-container" class="btn-primary" id="terms-and-conditions">Terms and Conditions</a>
-                        </div>
-                    </div>  <!-- navigation end row -->
-                <!--  modal section -->
-                <div id="modal-container" class="modalDialog">
-                    <script id="modal-content-wrapper" type="text/x-handlebars-template">
-                        <div>
-                            <a href="#close" title="Close" class="close">X</a>
-                            <h1>{{modalTitle}}</h1>
-                            <p>{{{modalContent}}}</p>
-                        </div>
-                    </script>
-                </div> <!-- ends modal insert --> 
-        
+            </script>
+            <div id="navigation" class="row hidden">
+                <div class="col-sm-6 col-md-6 col-lg-6 text-center">
+                    <a class="btn-primary" id="replay-the-video">Replay The Video</a>
+                </div>
+                <div class="col-sm-612 col-md-6 col-lg-6 text-center">
+                    <a href="#modal-container" class="btn-primary" id="terms-and-conditions">Terms and Conditions</a>
+                </div>
+            </div>  <!-- navigation end row -->
+            <!--  modal section -->
+            <div id="modal-container" class="modalDialog">
+                <script id="modal-content-wrapper" type="text/x-handlebars-template">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h1>{{modalTitle}}</h1>
+                        <p>{{{modalContent}}}</p>
+                    </div>
+                </script>
+            </div> <!-- ends modal insert -->
+        </div> <!-- ends mainpage container -->
         <script src="js/vendor/jquery-2.2.0.min.js"></script>
         <script src="js/vendor/handlebars-v4.0.5.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
