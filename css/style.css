@@ -80,19 +80,13 @@ video {
 #mainpage-container {
 	background-color: black;
 	font-family: 'Slabo 27px', serif;
-	font-size: 1.4em;
 	color: #FFFFFF;
 	width: 80%;
 	margin: 2em auto 0;
 }
 
-#mainpage-container h2 {
-	color: white;
-	font-size: 1.8em;
-}
-
 #mainpage-container p {
-	font-size: 1.6em;
+	font-size: 1.4em;
 }
 
 .hidden {
