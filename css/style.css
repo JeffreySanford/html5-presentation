@@ -87,11 +87,6 @@ video {
 	color: #FFFFFF;
 	width: 80%;
 	margin: 2em auto 0;
-
-	/* transitions */
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
 }
 
 #mainpage-container h2 {
