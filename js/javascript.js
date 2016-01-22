@@ -39,11 +39,6 @@
         var audioWrapper = document.getElementById("audio-wrapper");
         var videoWrapper = document.getElementById("video-wrapper");
 
-        //allow for skipping the video
-        $("#skip-video").on("click", function () {
-            loadMainPage();
-        });
-
         // try fullscreen
         if (videoWrapper.requestFullscreen) {
             videoWrapper.requestFullscreen();
@@ -79,6 +74,11 @@
 
         $("#replay-the-video").on("click", function () {
             playTheVideo();
+        });
+
+        //allow for skipping the video
+        $("#skip-video").on("click", function () {
+            loadMainPage();
         });
     });
 }());
