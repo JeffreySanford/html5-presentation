@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>HTML5 Video Landing Page</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/myers-reset.css">
         <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!--  video section -->
@@ -35,9 +36,6 @@
                         </audio> 
                     </div>
                     <script id="mainpage-content-wrapper" type="text/x-handlebars-template"> 
-                        <div>
-                            <h1>Extraordinary News!!!</h1>
-                            <hr>
                             <div class="row">
                                 <div class="col-md-4 align-left">
                                     <p>{{{ mainPageLeftColumn }}}</p>
@@ -46,7 +44,6 @@
                                     <p>{{{ mainPageRightColumn }}}</p>
                                 </div>
                             </div>
-                        </div>
                     </script>
                     </div>
                     <div id="navigation" class="row hidden">
@@ -55,9 +52,6 @@
                         </div>
                         <div class="col-sm-612 col-md-6 col-lg-6 text-center">
                             <a href="#modal-container" class="btn-primary" id="terms-and-conditions">Terms and Conditions</a>
-                        </div>
-                        <div id="mute-the-sound">
-                            <p>Audio Off:<span class="glyphicon glyphicon-volume-off"></span><p>
                         </div>
                     </div>  <!-- navigation end row -->
                 <!--  modal section -->
