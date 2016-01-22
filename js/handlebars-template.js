@@ -16,7 +16,11 @@
         var audioSource = audioTemplate(pageInformation);
         $('#audio-wrapper').append(audioSource);
 
-        var mainPageContentWrapper = Handlebars.compile($(".mainpage-content-wrapper").html());
+        var mainPageContentWrapper = Handlebars.compile($("#mainpage-title-wrapper").html());
+        var mainPageSource = mainPageContentWrapper(pageInformation);
+        $('#mainpage-container').append(mainPageSource);
+
+        var mainPageContentWrapper = Handlebars.compile($("#mainpage-content-wrapper").html());
         var mainPageSource = mainPageContentWrapper(pageInformation);
         $('#mainpage-container').append(mainPageSource);
 
