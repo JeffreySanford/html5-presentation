@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
 html, body {
 	background-color: #000000;
-	font-family:'Trebuchet MS','Verdana','Arial','sans-serif';
+	font-family: 'Slabo 27px', serif;
 }
 
 #navigation {
@@ -37,9 +39,9 @@ video {
 
 #skip-video {
 	position: fixed; 
-	z-index: 1; 
-	bottom: 34px;
-	right: 10px;
+	z-index: 1;
+	bottom: 60px;
+	right: 30px;
 }
 
 .video-content video {
@@ -54,8 +56,8 @@ video {
 	background: none;
 }
 
-#page-template {
-	background: url(../images/MS-background.jpg) no-repeat center center fixed; 
+#page-template { 
+	background-repeat: no-repeat; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -73,6 +75,14 @@ video {
 	position: fixed;
 	top: 0;
 	left: 0;
+}
+
+#mainpage-container {
+	font-family: 'Slabo 27px', serif;
+	color: #FFFFFF;
+	width: 80%;
+	margin: 0 auto;
+	background-color: black;
 
 	/* transitions */
 	-webkit-transition: opacity 400ms ease-in;
@@ -80,16 +90,13 @@ video {
 	transition: opacity 400ms ease-in;
 }
 
-#important-content {
-	font-family:'Trebuchet MS','Verdana','Arial','sans-serif';
-	color: #FFFFFF;
-	width: 80%;
-	margin: 0 auto;
-	opacity: .8;
+#mainpage-container h2 {
+	color: white;
+	font-size: 1.5em;
 }
 
-#important-content p {
-	font-size: 1.4em;
+#mainpage-container p {
+	font-size: 1.1em;
 }
 
 .hidden {
@@ -118,23 +125,27 @@ video {
 }
 
 .modalDialog > div {
+	font-family: 'Slabo 27px', serif;
 	width: 50%;
 	position: relative;
 	margin: 5% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+	background: rgb(122,188,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+
 }
 
-#openModal {
+#modal-container {
 	color: black;
 }
 
 .close {
-	background: #606061;
+	background: #0000FF;
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
