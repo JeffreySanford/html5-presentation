@@ -77,12 +77,16 @@ video {
 	left: 0;
 }
 
+#mainpage {
+	background-color: black;	
+}
+
 #mainpage-container {
 	font-family: 'Slabo 27px', serif;
+	font-size: 1.6em;
 	color: #FFFFFF;
 	width: 80%;
-	margin: 0 auto;
-	background-color: black;
+	margin: 2em auto 0;
 
 	/* transitions */
 	-webkit-transition: opacity 400ms ease-in;
@@ -92,11 +96,11 @@ video {
 
 #mainpage-container h2 {
 	color: white;
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 
 #mainpage-container p {
-	font-size: 1.4em;
+	font-size: 1.6em;
 }
 
 .hidden {

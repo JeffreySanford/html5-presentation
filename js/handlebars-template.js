@@ -7,7 +7,7 @@ $.getJSON("data/pageinformation.json", function(json) {
 
     var backgroundTemplate = Handlebars.compile( $("#handlebars-background-wrapper").html());
     var backgroundSource = backgroundTemplate(pageInformation);
-    $('#mainpage-container').append(backgroundSource);
+    $('#mainpage').append(backgroundSource);
 
     var audioTemplate = Handlebars.compile( $("#handlebars-audio-wrapper").html());
     var audioSource = audioTemplate(pageInformation);
