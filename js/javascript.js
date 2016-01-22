@@ -7,7 +7,7 @@
 
         $("#replay-the-video").on("click", function () {
             playTheVideo();
-        })
+        });
 
         //Check for fullscreen
         if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
@@ -31,7 +31,7 @@
         $("#skip-video").addClass('hidden');
 
         // moving to the main page and turning on audio
-        $("#mainpage").removeClass('hidden');
+        $("#mainpage-container").removeClass('hidden');
         $("#navigation").removeClass('hidden');
 
         // play the udio track from the beginnning
@@ -62,7 +62,7 @@
         // remove the video elements and hide the page now
         $("#video-wrapper").removeClass('hidden');
         $("#skip-video").removeClass('hidden');
-        $("#mainpage").addClass('hidden');
+        $("#mainpage-container").addClass('hidden');
         $("#navigation").addClass('hidden');
 
         audioWrapper.pause();
