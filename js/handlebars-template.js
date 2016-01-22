@@ -16,13 +16,13 @@
         var audioSource = audioTemplate(pageInformation);
         $('#audio-wrapper').append(audioSource);
 
-        var mainPageContentWrapper = Handlebars.compile($("#mainpage-title-wrapper").html());
-        var mainPageSource = mainPageContentWrapper(pageInformation);
-        $('#mainpage-container').append(mainPageSource);
+        var titleRow = Handlebars.compile($("#mainpage-title-wrapper").html());
+        var titleRowSource = titleRow(pageInformation);
+        $('#title-row').append(titleRowSource);
 
-        var mainPageContentWrapper = Handlebars.compile($("#mainpage-content-wrapper").html());
-        var mainPageSource = mainPageContentWrapper(pageInformation);
-        $('#mainpage-container').append(mainPageSource);
+        var textColumns = Handlebars.compile($("#mainpage-content-wrapper").html());
+        var textColumnsSource = textColumns(pageInformation);
+        $('#text-columns').append(textColumnsSource);
 
         var modalContentWrapper = Handlebars.compile($("#modal-content-wrapper").html());
         var modalSource = modalContentWrapper(pageInformation);
