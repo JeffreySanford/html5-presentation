@@ -5,8 +5,11 @@
         var videoWrapper = document.getElementById("video-wrapper");
         var audioWrapper = document.getElementById("audio-wrapper");
 
+        $("#replay-the-video").on("click", function () {
+            playTheVideo();
+        })
+
         //Check for fullscreen
-        // are we full-screen?
         if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
             // exit full-screen
             if (document.exitFullscreen) {
