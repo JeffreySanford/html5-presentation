@@ -6,6 +6,7 @@
         var audioWrapper = document.getElementById("audio-wrapper");
 
         $("#replay-the-video").on("click", function () {
+            console.log('clciked the play button');
             playTheVideo();
         });
 
@@ -80,5 +81,10 @@
     $(document).ready(function () {
         //start the video
         playTheVideo();
+
+        $("#replay-the-video").on("click", function () {
+            console.log('clciked the play button');
+            playTheVideo();
+        });
     });
 }());
