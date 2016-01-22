@@ -31,7 +31,7 @@
         $("#skip-video").addClass('hidden');
 
         // moving to the main page and turning on audio
-        $("#mainpage-container").removeClass('hidden');
+        $("#mainpage").removeClass('hidden');
         $("#navigation").removeClass('hidden');
 
         // play the udio track from the beginnning
@@ -62,7 +62,7 @@
         // remove the video elements and hide the page now
         $("#video-wrapper").removeClass('hidden');
         $("#skip-video").removeClass('hidden');
-        $("#mainpage-container").addClass('hidden');
+        $("#mainpage").addClass('hidden');
         $("#navigation").addClass('hidden');
 
         audioWrapper.pause();
