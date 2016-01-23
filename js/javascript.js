@@ -1,12 +1,13 @@
 /*global $ */
 (function IFEE() {
     'use strict';
+
+    var audioWrapper = document.getElementById("audio-wrapper");
+    var videoWrapper = document.getElementById("video-wrapper");
+
     function loadMainPage() {
-        var videoWrapper = document.getElementById("video-wrapper");
-        var audioWrapper = document.getElementById("audio-wrapper");
 
         //Check for fullscreen
-        // are we full-screen?
         if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
             // exit full-screen
             if (document.exitFullscreen) {
@@ -37,24 +38,6 @@
     }
 
     function playTheVideo() {
-        var audioWrapper = document.getElementById("audio-wrapper");
-        var videoWrapper = document.getElementById("video-wrapper");
-
-        //allow for skipping the video
-        $("#skip-video").on("click", function () {
-            loadMainPage();
-        });
-
-        // try fullscreen
-        if (videoWrapper.requestFullscreen) {
-            videoWrapper.requestFullscreen();
-        } else if (videoWrapper.webkitRequestFullscreen) {
-            videoWrapper.webkitRequestFullscreen();
-        } else if (videoWrapper.mozRequestFullScreen) {
-            videoWrapper.mozRequestFullScreen();
-        } else if (videoWrapper.msRequestFullscreen) {
-            videoWrapper.msRequestFullscreen();
-        }
 
         // remove the video elements and hide the page now
         $("#video-wrapper").removeClass('hidden');
@@ -77,5 +60,29 @@
     $(document).ready(function () {
         //start the video
         playTheVideo();
+
+        //  Register click events
+
+        // allow for skipping the video
+        $("#skip-video").click(function fnSkipTheVideo() {
+            loadMainPage();
+        });
+
+        //  replay the video in fullscreen
+        $('#replay-the-video').on("click", function fnReplayTheVideo() {
+            var videoContainer = document.getElementById("video-container");
+            // try fullscreen
+            if (videoContainer.requestFullscreen) {
+                videoContainer.requestFullscreen();
+            } else if (videoContainer.webkitRequestFullscreen) {
+                videoContainer.webkitRequestFullscreen();
+            } else if (videoContainer.mozRequestFullScreen) {
+                videoContainer.mozRequestFullScreen();
+            } else if (videoContainer.msRequestFullscreen) {
+                videoContainer.msRequestFullscreen();
+            }
+            playTheVideo();
+        });
+
     });
 }());

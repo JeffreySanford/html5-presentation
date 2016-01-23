@@ -9,13 +9,15 @@ $.getJSON("data/pageinformation.json", function(json) {
     var backgroundSource = backgroundTemplate(pageInformation);
     $('#mainpage-container').append(backgroundSource);
 
+    var mainPageContentWrapper = Handlebars.compile( $("#mainpage-content-wrapper").html());
+    var mainPageSource = mainPageContentWrapper(pageInformation);
+    $('#mainpage-container').append(mainPageSource);
+
     var audioTemplate = Handlebars.compile( $("#handlebars-audio-wrapper").html());
     var audioSource = audioTemplate(pageInformation);
     $('#audio-wrapper').append(audioSource);
 
-    var mainPageContentWrapper = Handlebars.compile( $("#mainpage-content-wrapper").html());
-    var mainPageSource = mainPageContentWrapper(pageInformation);
-    $('#mainpage-container').append(mainPageSource);
+
 
     var modalContentWrapper = Handlebars.compile( $("#modal-content-wrapper").html());
     var modalSource = modalContentWrapper(pageInformation);
