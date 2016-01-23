@@ -6,6 +6,7 @@
         var audioWrapper = document.getElementById("audio-wrapper");
 
         //Check for fullscreen
+        // are we full-screen?
         if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
             // exit full-screen
             if (document.exitFullscreen) {
@@ -39,6 +40,11 @@
         var audioWrapper = document.getElementById("audio-wrapper");
         var videoWrapper = document.getElementById("video-wrapper");
 
+        //allow for skipping the video
+        $("#skip-video").on("click", function () {
+            loadMainPage();
+        });
+
         // try fullscreen
         if (videoWrapper.requestFullscreen) {
             videoWrapper.requestFullscreen();
@@ -71,14 +77,5 @@
     $(document).ready(function () {
         //start the video
         playTheVideo();
-
-        $("#replay-the-video").on("click", function () {
-            playTheVideo();
-        });
-
-        //allow for skipping the video
-        $("#skip-video").on("click", function () {
-            loadMainPage();
-        });
     });
 }());

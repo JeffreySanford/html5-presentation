@@ -2,3 +2,5 @@ web.config
 video/
 music/
 .idea/
+gruntserver.js
+package.json
