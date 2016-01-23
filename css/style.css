@@ -109,6 +109,14 @@ video {
 	pointer-events: none;
 }
 
+.modalDialog h2 {
+	font-size: 1.8em;
+}
+
+.modalDialog p {
+	font-size: 1.5em;
+}
+
 .modalDialog:target {
 	opacity: 1;
 	pointer-events: auto;
