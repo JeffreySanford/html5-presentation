@@ -66,12 +66,16 @@ video {
 
 #mainpage-container h2 {
 	font-size: 1.8em;
+	colo: blue;
 }
 
 #mainpage-container p {
 	font-size: 1.5em;
 }
 
+#right-col-drop {
+	margin-top: 10em;
+}
 #navigation {
 	position: fixed;
 	z-index: 1;
