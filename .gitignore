@@ -1,6 +1,7 @@
-web.config
+node_modules/
 video/
 music/
 .idea/
 gruntserver.js
 package.json
+web.config
