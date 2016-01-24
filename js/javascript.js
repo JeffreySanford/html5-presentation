@@ -33,7 +33,9 @@
         $("#navigation").removeClass('hidden');
 
         // play the audio track
+        
         audioWrapper.play();
+        audioWrapper.currentTime = 0;
     }
 
     function playTheVideo() {
