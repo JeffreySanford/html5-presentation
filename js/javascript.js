@@ -33,7 +33,7 @@
         $("#navigation").removeClass('hidden');
 
         // play the udio track from the beginnning
-        audioWrapper.currentTime = 0;
+        
         audioWrapper.play();
     }
 
@@ -46,7 +46,8 @@
         $("#navigation").addClass('hidden');
 
         audioWrapper.pause();
-
+        audioWrapper.currentTime = 0;
+        
         // play the video from the beginning
         videoWrapper.play();
 
