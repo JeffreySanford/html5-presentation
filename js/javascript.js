@@ -23,7 +23,7 @@
 
         // resetting to start turning off the video if not finished
 
-        if (videoWrapper.currentTime !== 'undefined') {
+        if (videoWrapper !== 'undefined') {
             videoWrapper.currentTime = 0;
         }
 
