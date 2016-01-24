@@ -32,12 +32,14 @@
         $("#mainpage-container").removeClass('hidden');
         $("#navigation").removeClass('hidden');
 
-        // play the audio track
-
-        audioWrapper.play();
-        if (audioWrapper.currentTime >= 0) {
+        //start the audio track from the beginning
+        if (audioWrapper.currentTime !== 'undefined') {
             audioWrapper.currentTime = 0;
         }
+        
+        // play the audio track
+        audioWrapper.play();
+
     }
 
     function playTheVideo() {
