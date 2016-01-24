@@ -65,13 +65,13 @@ video {
 }
 
 #mainpage-container h2 {
-	font-size: 16px;
+	font-size: 20px;
 	color: blue;
 	font-weight: bold;
 }
 
 #mainpage-container p {
-	font-size: 12px;
+	font-size: 16px;
 	margin-bottom: 2em;
 }
 
