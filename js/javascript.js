@@ -32,10 +32,8 @@
         $("#mainpage-container").removeClass('hidden');
         $("#navigation").removeClass('hidden');
 
-        // play the audio track from the beginnning
-        
+        // play the audio track
         audioWrapper.play();
-        audioWrapper.currentTime = 0;
     }
 
     function playTheVideo() {
@@ -46,7 +44,12 @@
         $("#mainpage-container").addClass('hidden');
         $("#navigation").addClass('hidden');
 
-        audioWrapper.pause();
+        // if this is a video replay, pause and reset the background music
+        if (audioWrapper.currentTime !== 'undefined') {
+            audioWrapper.pause();
+            audioWrapper.currentTime = 0;
+        }
+
 
         // play the video from the beginning
         videoWrapper.play();
@@ -84,6 +87,5 @@
             }
             playTheVideo();
         });
-
-    });
+    });  //end the onready event
 }());
