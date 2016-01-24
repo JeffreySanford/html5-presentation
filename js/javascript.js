@@ -36,14 +36,8 @@
         $("#mainpage-container").removeClass('hidden');
         $("#navigation").removeClass('hidden');
 
-        //start the audio track from the beginning
-        if (audioWrapper !== 'undefined') {
-            audioWrapper.currentTime = 0;
-        }
-
         // play the audio track
         audioWrapper.play();
-
     }
 
     function playTheVideo() {
@@ -54,11 +48,12 @@
         $("#mainpage-container").addClass('hidden');
         $("#navigation").addClass('hidden');
 
-        // if this is a video replay, pause and reset the background music
-        if (audioWrapper.currentTime !== 'undefined') {
-            audioWrapper.pause();
+        //start the audio track from the beginning
+        if (audioWrapper !== 'undefined') {
+            audioWrapper.currentTime = 0;
         }
 
+        audioWrapper.pause();
 
         // play the video from the beginning
         videoWrapper.play();
