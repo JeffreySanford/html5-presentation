@@ -21,9 +21,13 @@
             }
         }
 
-        // turning off the video if not finsihed
+        // resetting to start turning off the video if not finished
+
+        if (videoWrapper.currentTime !== 'undefined') {
+            videoWrapper.currentTime = 0;
+        }
+
         videoWrapper.pause();
-        videoWrapper.currentTime = 0;
 
         $("video").addClass('hidden');
         $("#skip-video").addClass('hidden');
@@ -36,7 +40,7 @@
         if (audioWrapper.currentTime !== 'undefined') {
             audioWrapper.currentTime = 0;
         }
-        
+
         // play the audio track
         audioWrapper.play();
 
