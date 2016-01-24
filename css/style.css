@@ -65,13 +65,13 @@ video {
 }
 
 #mainpage-container h2 {
-	font-size: 2.5em;
+	font-size: 16px;
 	color: blue;
 	font-weight: bold;
 }
 
 #mainpage-container p {
-	font-size: 1.2em;
+	font-size: 12px;
 	margin-bottom: 2em;
 }
 
@@ -114,11 +114,11 @@ video {
 }
 
 .modalDialog h2 {
-	font-size: 1.8em;
+	font-size: 16px;
 }
 
 .modalDialog p {
-	font-size: 1.5em;
+	font-size: 12px;
 }
 
 .modalDialog:target {
