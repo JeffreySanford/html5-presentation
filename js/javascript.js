@@ -48,12 +48,12 @@
         $("#mainpage-container").addClass('hidden');
         $("#navigation").addClass('hidden');
 
+        audioWrapper.pause();
         //start the audio track from the beginning
         if (audioWrapper.currentTime !== 'undefined') {
             audioWrapper.currentTime = 0;
         }
 
-        audioWrapper.pause();
 
         // play the video from the beginning
         videoWrapper.play();
