@@ -47,7 +47,6 @@
         // if this is a video replay, pause and reset the background music
         if (audioWrapper.currentTime !== 'undefined') {
             audioWrapper.pause();
-            audioWrapper.currentTime = 0;
         }
 
 
