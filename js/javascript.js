@@ -51,9 +51,9 @@
         audioWrapper.pause();
         //start the audio track from the beginning
         if (audioWrapper.currentTime !== 'undefined') {
+            console.log(audioWrapper.currentTime);
             audioWrapper.currentTime = 0;
         }
-
 
         // play the video from the beginning
         videoWrapper.play();
