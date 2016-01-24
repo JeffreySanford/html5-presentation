@@ -49,7 +49,7 @@
         $("#navigation").addClass('hidden');
 
         //start the audio track from the beginning
-        if (audioWrapper !== 'undefined') {
+        if (audioWrapper.currentTime !== 'undefined') {
             audioWrapper.currentTime = 0;
         }
 
