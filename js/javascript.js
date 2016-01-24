@@ -21,13 +21,13 @@
             }
         }
 
+        videoWrapper.pause();
+
         // resetting to start turning off the video if not finished
 
-        if (videoWrapper.currentTime !== 'undefined') {
+        if (videoWrapper.currentTime !== 0) {
             videoWrapper.currentTime = 0;
         }
-
-        videoWrapper.pause();
 
         $("video").addClass('hidden');
         $("#skip-video").addClass('hidden');
